@@ -209,30 +209,30 @@ const Index = () => {
   }, [filters]);
 
   return (
-    <div className="min-h-screen bg-background pattern-microscopy">
+    <div className="min-h-screen bg-background pattern-microscopy science-glow">
       {/* Header */}
-      <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-40">
+      <header className="border-b border-border/50 bg-background/90 backdrop-blur-xl sticky top-0 z-40 shadow-glow">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-gradient-primary rounded-xl">
+              <div className="p-2 bg-gradient-primary rounded-xl shadow-glow">
                 <Microscope className="w-8 h-8 text-primary-foreground" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                   Microcosmos
                 </h1>
-                <p className="text-sm text-muted-foreground">Discover the invisible world</p>
+                <p className="text-sm text-primary/80 font-medium">Discover the invisible world</p>
               </div>
             </div>
 
             <div className="flex items-center gap-3">
-              <Badge variant="secondary" className="flex items-center gap-2">
+              <Badge variant="secondary" className="flex items-center gap-2 bg-primary/20 text-primary border-primary/30">
                 <Sparkles className="w-4 h-4" />
                 {mockDiscoveries.length} Discoveries
               </Badge>
               
-              <div className="flex items-center bg-muted rounded-lg p-1">
+              <div className="flex items-center bg-muted/50 rounded-lg p-1 border border-border/50">
                 <Button
                   variant={viewMode === 'grid' ? 'default' : 'ghost'}
                   size="sm"

@@ -8,50 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 15% 15%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 15%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 15%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 175 70% 35%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 175 80% 45%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 5%;
+    --primary-glow: 180 100% 70%;
 
-    --secondary: 175 25% 92%;
-    --secondary-foreground: 175 70% 25%;
+    --secondary: 240 8% 15%;
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 240 5% 12%;
+    --muted-foreground: 240 4% 65%;
 
-    --accent: 45 85% 65%;
-    --accent-foreground: 45 25% 25%;
+    --accent: 45 100% 60%;
+    --accent-foreground: 45 25% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 92%;
-    --ring: 175 70% 35%;
+    --border: 240 8% 18%;
+    --input: 240 8% 15%;
+    --ring: 180 100% 50%;
 
-    /* Discovery-specific colors */
-    --discovery-rare: 280 85% 65%;
-    --discovery-common: 120 60% 50%;
-    --discovery-educational: 210 80% 60%;
-    --discovery-research: 30 85% 55%;
+    /* Science-specific colors for black background */
+    --discovery-rare: 300 80% 70%;
+    --discovery-common: 120 70% 60%;
+    --discovery-educational: 210 80% 70%;
+    --discovery-research: 30 90% 65%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-discovery: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    /* Enhanced gradients for black background */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 40%), hsl(180 100% 70%));
+    --gradient-discovery: linear-gradient(135deg, hsl(180 100% 50%) 0%, hsl(45 100% 60%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(240 8% 8%) 0%, hsl(240 5% 12%) 100%);
+    --gradient-science: linear-gradient(135deg, hsl(180 100% 15%) 0%, hsl(240 100% 15%) 50%, hsl(300 100% 15%) 100%);
 
-    /* Shadows */
-    --shadow-discovery: 0 8px 32px hsl(var(--primary) / 0.15);
-    --shadow-hover: 0 16px 48px hsl(var(--primary) / 0.25);
-    --shadow-glow: 0 0 24px hsl(var(--primary-glow) / 0.4);
+    /* Enhanced shadows for black background */
+    --shadow-discovery: 0 8px 32px hsl(180 100% 50% / 0.3);
+    --shadow-hover: 0 20px 60px hsl(180 100% 50% / 0.4);
+    --shadow-glow: 0 0 40px hsl(180 100% 70% / 0.6);
+    --shadow-science: 0 0 60px hsl(180 100% 50% / 0.2);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,68 +61,63 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 240 8% 12%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 240 8% 15%;
+    --sidebar-ring: 180 100% 50%;
   }
 
   .dark {
-    --background: 220 25% 8%;
-    --foreground: 220 15% 92%;
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 20% 12%;
-    --card-foreground: 220 15% 92%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 20% 12%;
-    --popover-foreground: 220 15% 92%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 175 80% 55%;
-    --primary-foreground: 220 25% 8%;
-    --primary-glow: 175 90% 65%;
+    --primary: 180 100% 60%;
+    --primary-foreground: 0 0% 3%;
+    --primary-glow: 180 100% 80%;
 
-    --secondary: 220 20% 18%;
-    --secondary-foreground: 175 70% 75%;
+    --secondary: 240 6% 12%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 220 10% 65%;
+    --muted: 240 4% 8%;
+    --muted-foreground: 240 4% 70%;
 
-    --accent: 45 90% 70%;
-    --accent-foreground: 45 25% 15%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 45 25% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 18%;
-    --ring: 175 80% 55%;
+    --border: 240 6% 15%;
+    --input: 240 6% 12%;
+    --ring: 180 100% 60%;
 
-    /* Discovery-specific colors (dark mode) */
-    --discovery-rare: 280 75% 70%;
-    --discovery-common: 120 50% 60%;
-    --discovery-educational: 210 70% 70%;
-    --discovery-research: 30 75% 65%;
+    /* Enhanced discovery colors for ultra-dark */
+    --discovery-rare: 300 85% 75%;
+    --discovery-common: 120 75% 65%;
+    --discovery-educational: 210 85% 75%;
+    --discovery-research: 30 95% 70%;
 
-    /* Gradients (dark mode) */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-discovery: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    /* Enhanced gradients for ultra-dark */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(180 100% 80%));
+    --gradient-discovery: linear-gradient(135deg, hsl(180 100% 60%) 0%, hsl(45 100% 70%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(240 6% 6%) 0%, hsl(240 4% 10%) 100%);
+    --gradient-science: linear-gradient(135deg, hsl(180 100% 10%) 0%, hsl(240 100% 10%) 50%, hsl(300 100% 10%) 100%);
 
-    /* Shadows (dark mode) */
-    --shadow-discovery: 0 8px 32px hsl(var(--primary) / 0.3);
-    --shadow-hover: 0 16px 48px hsl(var(--primary) / 0.4);
-    --shadow-glow: 0 0 32px hsl(var(--primary-glow) / 0.6);
+    /* Enhanced shadows for ultra-dark */
+    --shadow-discovery: 0 8px 40px hsl(180 100% 50% / 0.4);
+    --shadow-hover: 0 25px 80px hsl(180 100% 50% / 0.5);
+    --shadow-glow: 0 0 60px hsl(180 100% 70% / 0.8);
+    --shadow-science: 0 0 80px hsl(180 100% 50% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -142,15 +139,17 @@ All colors MUST be HSL.
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  /* Discovery card animations */
+  /* Discovery card animations for black background */
   .discovery-card {
     transition: var(--transition-smooth);
     background: var(--gradient-card);
+    border: 1px solid hsl(240 8% 20%);
   }
 
   .discovery-card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: var(--shadow-hover);
+    border-color: hsl(180 100% 50% / 0.5);
   }
 
   .discovery-glow {
@@ -173,7 +172,7 @@ All colors MUST be HSL.
 
   .discovery-glow:hover::before {
     opacity: 1;
-    filter: blur(8px);
+    filter: blur(12px);
   }
 
   /* Floating animation for featured discoveries */
@@ -186,13 +185,13 @@ All colors MUST be HSL.
     animation: float 6s ease-in-out infinite;
   }
 
-  /* Pulse for new discoveries */
+  /* Pulse for new discoveries - enhanced for black background */
   @keyframes discovery-pulse {
     0%, 100% { 
-      box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+      box-shadow: 0 0 0 0 hsl(180 100% 50% / 0.8);
     }
     50% { 
-      box-shadow: 0 0 0 20px hsl(var(--primary) / 0);
+      box-shadow: 0 0 0 25px hsl(180 100% 50% / 0);
     }
   }
 
@@ -200,10 +199,17 @@ All colors MUST be HSL.
     animation: discovery-pulse 2s infinite;
   }
 
-  /* Microscopy-specific patterns */
+  /* Enhanced microscopy patterns for black background */
   .pattern-microscopy {
-    background-image: radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.1) 2px, transparent 2px),
-                      radial-gradient(circle at 75% 75%, hsl(var(--accent) / 0.1) 1px, transparent 1px);
-    background-size: 24px 24px;
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(180 100% 50% / 0.08) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, hsl(45 100% 60% / 0.06) 1px, transparent 1px),
+      radial-gradient(circle at 50% 50%, hsl(300 80% 70% / 0.04) 3px, transparent 3px);
+    background-size: 32px 32px, 16px 16px, 48px 48px;
+  }
+
+  /* Science glow effects */
+  .science-glow {
+    box-shadow: var(--shadow-science);
   }
 }
