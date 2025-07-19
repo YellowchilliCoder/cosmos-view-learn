@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import { DiscoveryCard } from '@/components/DiscoveryCard';
 import { DiscoveryFilters } from '@/components/DiscoveryFilters';
-import { FeaturedDiscovery } from '@/components/FeaturedDiscovery';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
@@ -124,7 +123,6 @@ const mockDiscoveries = [
   }
 ];
 
-const featuredDiscovery = mockDiscoveries[0];
 
 interface FilterState {
   search: string;
@@ -152,9 +150,6 @@ const Index = () => {
   // Filter and sort discoveries
   const filteredDiscoveries = useMemo(() => {
     let filtered = mockDiscoveries.filter(discovery => {
-      // Skip featured discovery in regular list
-      if (discovery.id === featuredDiscovery.id) return false;
-      
       // Search filter
       if (filters.search) {
         const searchTerm = filters.search.toLowerCase();
@@ -256,11 +251,8 @@ const Index = () => {
       </header>
 
       <div className="container mx-auto px-4 py-8">
-        {/* Featured Discovery */}
-        <FeaturedDiscovery {...featuredDiscovery} />
-
         {/* Filters */}
-        <DiscoveryFilters 
+        <DiscoveryFilters
           filters={filters}
           onFiltersChange={setFilters}
           activeFiltersCount={activeFiltersCount}
