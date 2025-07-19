@@ -82,7 +82,7 @@ export function DiscoveryCard({
     >
       {/* Image Container with Overlay Info */}
       <div className="relative aspect-square overflow-hidden">
-        <img 
+         <img 
           src={image} 
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
